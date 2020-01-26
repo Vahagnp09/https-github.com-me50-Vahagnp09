@@ -1,0 +1,132 @@
+body {
+    height: 100%;
+    background-color: burlywood;
+    font-size: 16px;
+    text-decoration: none;
+    max-width: 100%
+}
+
+div .container {
+    float: left;
+    margin: 15px;
+    width: 99%;
+    vertical-align: middle;
+}
+
+.NavigationItem {
+    display: inline;
+    margin: 5px;
+    padding: 2px 0;
+    list-style: none;
+    float: right;
+    font-size: 25px;
+}
+
+footer, header, header .container {
+    background-color: cornsilk
+}
+
+    footer .container {
+        border-top: double;
+        border-bottom-color: orangered;
+    }
+
+#right_foto {
+    position: absolute;
+    top: 400px;
+    left: 62%;
+    display: block;
+}
+
+#img_right_foto {
+    width: 95%;
+}
+
+p {
+    display: block;
+    height: auto;
+    width: 60%;
+    float: left;
+}
+
+    p::selection {
+        color: red;
+        background-color: yellow;
+    }
+
+footer {
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    #img_right_foto {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 801px) {
+    #img_right_foto {
+        visibility: visible;
+    }
+}
+
+.table_container {
+    width: 98%;
+    background-color: #C7CACC;
+    border: dotted;
+    border-width: thick;
+    border-color: grey;
+    height: 700px;
+    display: block;
+}
+
+.table_container_short {
+    width: 80%;
+    background-color: #C7CACC;
+    border: dotted;
+    border-width: thick;
+    border-color: grey;
+    height: 250px;
+    display: block;
+}
+
+table{
+    width: 98%;
+    height:98%;
+
+}
+
+tr {
+    display: block;
+    height: auto;
+    border: 1px thin grey;
+    border-collapse: collapse;
+}
+
+.songs{
+    display:inline-block;
+    height: auto;
+    width:20%;
+    text-align:left;
+    margin:0px 100px 0px 0px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-collapse:collapse
+}
+
+.td_poetry {
+    border: 0px solid grey;
+    border-collapse: collapse;
+    width: 30%;
+    display: inline-block;
+    height: auto;
+       
+}
+
+.text_Poetry {
+    text-align: center;
+}
+
+.col-sm img{
+    max-height: 80%;
+}
