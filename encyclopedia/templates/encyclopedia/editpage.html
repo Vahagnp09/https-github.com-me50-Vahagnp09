@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <form action="{% url 'save' name=title %}" role="form" method="post">
+        <button type="submit">Save</button>
+        {% csrf_token %}
+        {% if title is None %}
+             <input class="searchwiki" type="text" name="newpagetitle"  placeholder="Name of the Article">
+        {% endif %}
+        <div>
+            <textarea contenteditable="true" name="content" >{{article}}</textarea>
+        </div>
+
+    </form>
+
+
+
+{% endblock %}
